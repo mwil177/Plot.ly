@@ -2,7 +2,7 @@
 function getPlot(id) {
  //json data                                                          
   d3.json("samples.json").then((sampledata)=> {
-        console.log(sampledata)
+    console.log(sampledata)
     
     //filter samples by id
     var samples = data.samples.filter(q => q.id.toString() === id)[0];
